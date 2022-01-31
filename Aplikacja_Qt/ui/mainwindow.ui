@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1177</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string>Parametry pracy</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="0">
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="3" column="2">
+          <widget class="QLineEdit" name="UstawMoment">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="inputMask">
+            <string>999;_</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="AktualnyMomet">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0 Nm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Maksymalna</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_16">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Ciśnienie 
+w dyszy</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="MaksymalneCisnienie">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0 psi</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="AktualneCisnienie">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0 psi</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="Ustaw">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Ustaw</string>
+           </property>
+           <property name="shortcut">
+            <string>Return</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>  Aktualna</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="MaksymalnyMomet">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0 Nm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="UstawCisnienie">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="inputMask">
+            <string>9999;_</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_20">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Moment 
+ślimaka</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="2" colspan="3">
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="title">
+       <string>Temperatura</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="1" column="0">
+        <widget class="QLabel" name="AktualnaTemp_0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Aktualna
+ Temperatura</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="MaksymalnaTemperatura_0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Maksymalna 
+Temperatura</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="MaksymalnaTemperatura_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0°C</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="UstawTemperature_2">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="inputMask">
+          <string>999;_</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="AktualnaTemp_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0°C</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLineEdit" name="UstawTemperature_3">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="inputMask">
+          <string>999;_</string>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="MaksymalnaTemperatura_1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0°C</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="AktualnaTemp_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0°C</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="AktualnaTemp_1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0°C</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="Temperatura_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Temperatura 2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="UstawTemperature_1">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="inputMask">
+          <string>999;_</string>
+         </property>
+         <property name="maxLength">
+          <number>3</number>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="MaksymalnaTemperatura_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>0°C</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="Temperatura_1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Temperatura 1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="Temperatura_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Temperatura 3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string>Sterowanie obrotami</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="1" column="0" colspan="3">
+        <widget class="QDial" name="Obroty">
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="tabletTracking">
+          <bool>false</bool>
+         </property>
+         <property name="maximum">
+          <number>4095</number>
+         </property>
+         <property name="singleStep">
+          <number>41</number>
+         </property>
+         <property name="pageStep">
+          <number>409</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+         <property name="sliderPosition">
+          <number>0</number>
+         </property>
+         <property name="tracking">
+          <bool>true</bool>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="invertedAppearance">
+          <bool>false</bool>
+         </property>
+         <property name="invertedControls">
+          <bool>false</bool>
+         </property>
+         <property name="wrapping">
+          <bool>false</bool>
+         </property>
+         <property name="notchesVisible">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="Obroty_Prawe">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Start</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="Obroty_Lewe">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Stop</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" rowspan="2" colspan="2">
+        <widget class="QLabel" name="ObrotyWartosc">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>26</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>1Hz</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="title">
+       <string>Sterowanie grzałek i zaworów</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QProgressBar" name="progressBarGrzalka_1">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>50</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="textVisible">
+              <bool>false</bool>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="textDirection">
+              <enum>QProgressBar::TopToBottom</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QProgressBar" name="progressBarGrzalka_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>50</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="textVisible">
+              <bool>false</bool>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="textDirection">
+              <enum>QProgressBar::TopToBottom</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QProgressBar" name="progressBarGrzalka_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>50</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="textVisible">
+              <bool>false</bool>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="textDirection">
+              <enum>QProgressBar::TopToBottom</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QProgressBar" name="progressBarChlodzenie_1">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>50</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="textVisible">
+              <bool>false</bool>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="textDirection">
+              <enum>QProgressBar::TopToBottom</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QProgressBar" name="progressBarChlodzenie_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>50</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="textVisible">
+              <bool>false</bool>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="textDirection">
+              <enum>QProgressBar::TopToBottom</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QProgressBar" name="progressBarChlodzenie_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>50</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="value">
+              <number>0</number>
+             </property>
+             <property name="textVisible">
+              <bool>false</bool>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="textDirection">
+              <enum>QProgressBar::TopToBottom</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QCheckBox" name="Grzalka_1">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Grzałka 1</string>
+             </property>
+             <property name="tristate">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="Grzalka_2">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Grzałka 2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="Grzalka_3">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Grzałka 3</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="Chlodzenie_1">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Chłodzenie 1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="Chlodzenie_2">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Chłodzenie 2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="Chlodzenie_3">
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Chłodzenie 3</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="5">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="PomiarCzasu">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>0:0:0:0</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Nowy Pomiar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Zapisz</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1177</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNa_dzia">
+    <property name="title">
+     <string>Narzędzia</string>
+    </property>
+    <addaction name="actionPolacz"/>
+   </widget>
+   <addaction name="menuNa_dzia"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionBaud_rate">
+   <property name="text">
+    <string>Baud rate</string>
+   </property>
+  </action>
+  <action name="actionData_bits">
+   <property name="text">
+    <string>Data bits</string>
+   </property>
+  </action>
+  <action name="actionParzysto">
+   <property name="text">
+    <string>Parzystość</string>
+   </property>
+  </action>
+  <action name="actionWykresy">
+   <property name="text">
+    <string>Wykresy</string>
+   </property>
+  </action>
+  <action name="actionZapisz">
+   <property name="text">
+    <string>Zapisz</string>
+   </property>
+  </action>
+  <action name="actionWczytaj">
+   <property name="text">
+    <string>Wczytaj</string>
+   </property>
+  </action>
+  <action name="actionExportuj">
+   <property name="text">
+    <string>Exportuj</string>
+   </property>
+  </action>
+  <action name="actionPolacz">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>MenuKomunikacji</string>
+   </property>
+  </action>
+  <action name="actionRozlacz">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Rozłącz</string>
+   </property>
+  </action>
+  <action name="action1800">
+   <property name="text">
+    <string>1800</string>
+   </property>
+  </action>
+  <action name="actionSzukaj">
+   <property name="text">
+    <string>Szukaj</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+  </action>
+  <action name="actionasdasd">
+   <property name="text">
+    <string>asdasd\</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>UstawCisnienie</tabstop>
+  <tabstop>UstawMoment</tabstop>
+  <tabstop>UstawTemperature_1</tabstop>
+  <tabstop>UstawTemperature_2</tabstop>
+  <tabstop>UstawTemperature_3</tabstop>
+  <tabstop>Ustaw</tabstop>
+  <tabstop>Grzalka_1</tabstop>
+  <tabstop>Grzalka_2</tabstop>
+  <tabstop>Grzalka_3</tabstop>
+  <tabstop>Chlodzenie_1</tabstop>
+  <tabstop>Chlodzenie_2</tabstop>
+  <tabstop>Chlodzenie_3</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>Obroty</tabstop>
+  <tabstop>Obroty_Lewe</tabstop>
+  <tabstop>Obroty_Prawe</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
